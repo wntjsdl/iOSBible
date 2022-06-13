@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Als-je-MOc">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StockRankCollectionViewCell" id="Als-je-MOc" customClass="StockRankCollectionViewCell" customModule="StockRank" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pHB-fj-7tL">
@@ -93,6 +93,13 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="128"/>
+                                        <connections>
+                                            <outlet property="companyIconImageView" destination="JM7-JF-8NE" id="Yok-Vc-HNe"/>
+                                            <outlet property="companyNameLabel" destination="XnP-Be-XZj" id="cKL-ok-goL"/>
+                                            <outlet property="companyPriceLabel" destination="pX4-ZY-Ps5" id="gTU-rN-ujv"/>
+                                            <outlet property="diffLabel" destination="SOQ-0j-461" id="Jmo-Qd-n9g"/>
+                                            <outlet property="rankLabel" destination="zOY-BK-pJf" id="bQU-OQ-nz9"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -112,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6GE-h5-51z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71.014492753623188" y="63.616071428571423"/>
+            <point key="canvasLocation" x="-367" y="68"/>
         </scene>
     </scenes>
     <resources>
