@@ -21,6 +21,8 @@ class FrameworkListViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        navigationController?.navigationBar.topItem?.title = "☀️ Apple Frameworks"
+        
         if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowlayout.estimatedItemSize = .zero
         }
@@ -53,7 +55,7 @@ extension FrameworkListViewController: UICollectionViewDelegateFlowLayout {
         let interItemSpacing: CGFloat = 10
         let padding: CGFloat = 16
         
-        let width = (collectionView.bounds.width - interItemSpacing * 3 - padding * 2) / 4
+        let width = (collectionView.bounds.width - interItemSpacing * 2 - padding * 2) / 3
         let height = width * 1.5
         return CGSize(width: width, height: height)
     }
