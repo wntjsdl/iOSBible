@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3E285F7A2867790300075484 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E285F792867790300075484 /* SearchViewController.swift */; };
 		3E285F7C286779FD00075484 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E285F7B286779FD00075484 /* ResultCell.swift */; };
+		3E60529E2869E3EE002854AA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E60529D2869E3EE002854AA /* HomeTableViewController.swift */; };
+		3E6052A22869E547002854AA /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6052A12869E547002854AA /* ImageCell.swift */; };
 		948CD22D2812F01B003DC0C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD22C2812F01B003DC0C4 /* AppDelegate.swift */; };
 		948CD22F2812F01B003DC0C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD22E2812F01B003DC0C4 /* SceneDelegate.swift */; };
 		948CD2342812F01B003DC0C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948CD2322812F01B003DC0C4 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		3E285F792867790300075484 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3E285F7B286779FD00075484 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		3E60529D2869E3EE002854AA /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		3E6052A12869E547002854AA /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		948CD2292812F01B003DC0C4 /* InstaSearchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaSearchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948CD22C2812F01B003DC0C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		948CD22E2812F01B003DC0C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				948CD22C2812F01B003DC0C4 /* AppDelegate.swift */,
 				948CD22E2812F01B003DC0C4 /* SceneDelegate.swift */,
 				3E285F792867790300075484 /* SearchViewController.swift */,
+				3E60529D2869E3EE002854AA /* HomeTableViewController.swift */,
+				3E6052A12869E547002854AA /* ImageCell.swift */,
 				3E285F7B286779FD00075484 /* ResultCell.swift */,
 				948CD2322812F01B003DC0C4 /* Main.storyboard */,
 				948CD2352812F01B003DC0C4 /* Assets.xcassets */,
@@ -265,6 +271,8 @@
 				948CD22D2812F01B003DC0C4 /* AppDelegate.swift in Sources */,
 				3E285F7C286779FD00075484 /* ResultCell.swift in Sources */,
 				948CD22F2812F01B003DC0C4 /* SceneDelegate.swift in Sources */,
+				3E60529E2869E3EE002854AA /* HomeTableViewController.swift in Sources */,
+				3E6052A22869E547002854AA /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
