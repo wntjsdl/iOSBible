@@ -8,12 +8,11 @@
 import UIKit
 
 class HomeTableViewController: UITableViewController {
-    @IBOutlet weak var homeTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeTableView.dataSource = self
-        homeTableView.delegate = self
+        
+//        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ImageCell")
     }
 
     // MARK: - Table view data source
@@ -29,7 +28,7 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = homeTableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath) as? ImageCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath) as? ImageCell else {
             return UITableViewCell()
         }
         
@@ -39,11 +38,13 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
 
+    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
+    */
 
     /*
     // Override to support editing the table view.
