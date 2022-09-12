@@ -45,26 +45,25 @@ class FrameworkListViewController: UIViewController {
         didSelect
             .receive(on: RunLoop.main)
             .sink { [unowned self] framework in
-            let sb = UIStoryboard(name: "Detail", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
-            vc.framework = framework
-            present(vc, animated: true)
-        }.store(in: $subscriptions)
+                let sb = UIStoryboard(name: "Detail", bundle: nil)
+                let vc = sb.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
+                vc.framework.send(framework)
+                self.present(vc, animated: true)
+            }.store(in: &subscriptions)
 
         // output: data, state 변경에 따라서, UI 업데이트 할 것
         // - items 세팅이 되었을 때 뷰를 업데이트
         items
             .receive(on: RunLoop.main)
             .sink { [unowned self] list in
-            applySectionItems(list)
-        }.store(in: $subscriptions)
+                self.applySectionItems(list)
+        }.store(in: &subscriptions)
     }
 
     private func applySectionItems(_ items: [Item], to section: Section = .main) {
-        // data
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections([section])
-        snapshot.appendItems(list, toSection: section)
+        snapshot.appendItems(items, toSection: section)
         dataSource.apply(snapshot)
     }
 
