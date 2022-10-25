@@ -40,11 +40,16 @@ class FrameworkListViewController: UIViewController {
         viewModel.selectedItem
             .compactMap { $0 }
             .receive(on: RunLoop.main)
-            .sink { framework in
-                let sb = UIStoryboard(name: "Detail", bundle: nil)
-                let vc = sb.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
-                vc.viewModel = FrameworkDetailViewModel(framework: framework)
-                self.present(vc, animated: true)
+            .sink { framework in
+//                let sb = UIStoryboard(name: "Detail", bundle: nil)
+//                let vc = sb.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
+//                vc.viewModel = FrameworkDetailViewModel(framework: framework)
+//                self.present(vc, animated: true)
+                
+                let detailViewModel = FrameworkDetailViewModelSwiftUI(framework: framework)
+                let detailView = FrameworkDetailView(viewModel: detailViewModel)
+                let hoistingController = UIHostingController(rootView: detailView)
+                self.present(hoistingController, animated: true)
             }.store(in: &subscriptions)
     }
     
