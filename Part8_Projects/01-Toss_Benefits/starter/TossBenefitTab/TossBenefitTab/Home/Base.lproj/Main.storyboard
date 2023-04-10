@@ -34,7 +34,7 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyPointCell" id="tLX-kq-2Wj" customClass="MyPointCell" customModule="TossBenefitTab" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VLJ-1g-XnI" customClass="MyPointCell" customModule="TossBenefitTab" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VLJ-1g-XnI">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -78,7 +78,7 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TodayBenefitCell" id="fjM-e5-b8t" customClass="TodayBenefitCell" customModule="TossBenefitTab" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="138" width="414" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yZr-am-QAs" customClass="TodayBenefitCell" customModule="TossBenefitTab" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yZr-am-QAs">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>

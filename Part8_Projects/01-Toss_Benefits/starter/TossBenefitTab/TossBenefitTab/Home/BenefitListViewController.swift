@@ -103,5 +103,21 @@ extension BenefitListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = datasource.itemIdentifier(for: indexPath)
         print("---> \(item)")
+        
+        if let benefit = item as? Benefit {
+            let sb = UIStoryboard(name: "ButtonBenefit", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "ButtonBenefitViewController") as! ButtonBenefitViewController
+            
+            vc.benefit = benefit
+            navigationController?.pushViewController(vc, animated: true)
+        } else if let point = item as? MyPoint {
+            let sb = UIStoryboard(name: "MyPoint", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "MyPointViewController") as! MyPointViewController
+            
+            vc.point = point
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            // no-op
+        }
     }
 }
