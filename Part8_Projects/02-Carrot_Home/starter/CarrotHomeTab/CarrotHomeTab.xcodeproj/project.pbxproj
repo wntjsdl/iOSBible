@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6316F52929EEE84F008D6E11 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6316F52829EEE84F008D6E11 /* HomeViewController.swift */; };
+		6316F52B29EEE86C008D6E11 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6316F52A29EEE86C008D6E11 /* DetailViewController.swift */; };
+		6316F52D29EEE8F5008D6E11 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6316F52C29EEE8F5008D6E11 /* MainNavigationViewController.swift */; };
+		6316F52F29EEE924008D6E11 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6316F52E29EEE924008D6E11 /* MainTabBarController.swift */; };
+		6316F53129EEE9B9008D6E11 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6316F53029EEE9B9008D6E11 /* Detail.storyboard */; };
 		9402EE1128673D9C00D33FDD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402EE0F28673D9C00D33FDD /* NetworkService.swift */; };
 		9402EE1228673D9C00D33FDD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402EE1028673D9C00D33FDD /* Resource.swift */; };
 		9402EE1728673FB100D33FDD /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402EE1628673FB100D33FDD /* Publisher+Utils.swift */; };
@@ -39,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6316F52829EEE84F008D6E11 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6316F52A29EEE86C008D6E11 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6316F52C29EEE8F5008D6E11 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		6316F52E29EEE924008D6E11 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		6316F53029EEE9B9008D6E11 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		9402EE0F28673D9C00D33FDD /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9402EE1028673D9C00D33FDD /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		9402EE1628673FB100D33FDD /* Publisher+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
@@ -133,6 +143,11 @@
 				94BB227D28669A15004FC34D /* AppDelegate.swift */,
 				94BB227F28669A15004FC34D /* SceneDelegate.swift */,
 				94A38E57286830EA000691E1 /* Main.storyboard */,
+				6316F52829EEE84F008D6E11 /* HomeViewController.swift */,
+				6316F52C29EEE8F5008D6E11 /* MainNavigationViewController.swift */,
+				6316F52E29EEE924008D6E11 /* MainTabBarController.swift */,
+				6316F52A29EEE86C008D6E11 /* DetailViewController.swift */,
+				6316F53029EEE9B9008D6E11 /* Detail.storyboard */,
 				9402EE1528673FB100D33FDD /* Utils */,
 				9402EE0E28673D9C00D33FDD /* Network */,
 				94A38E4B2868307C000691E1 /* Model */,
@@ -271,6 +286,7 @@
 				94BB228A28669A16004FC34D /* LaunchScreen.storyboard in Resources */,
 				94A38E5C286830EA000691E1 /* Main.storyboard in Resources */,
 				94BB228728669A16004FC34D /* Assets.xcassets in Resources */,
+				6316F53129EEE9B9008D6E11 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,11 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				94BB227E28669A15004FC34D /* AppDelegate.swift in Sources */,
+				6316F52D29EEE8F5008D6E11 /* MainNavigationViewController.swift in Sources */,
+				6316F52F29EEE924008D6E11 /* MainTabBarController.swift in Sources */,
 				94A38E512868307C000691E1 /* ItemInfo.swift in Sources */,
 				94BB228028669A15004FC34D /* SceneDelegate.swift in Sources */,
 				9402EE1728673FB100D33FDD /* Publisher+Utils.swift in Sources */,
 				9402EE1128673D9C00D33FDD /* NetworkService.swift in Sources */,
+				6316F52929EEE84F008D6E11 /* HomeViewController.swift in Sources */,
 				9402EE1228673D9C00D33FDD /* Resource.swift in Sources */,
+				6316F52B29EEE86C008D6E11 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
